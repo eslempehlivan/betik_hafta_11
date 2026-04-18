@@ -1,9 +1,40 @@
+
+echo -n "1. sayi: "
+read sayi1
+
+echo -n "2. sayi: "
+read sayi2
+
+echo "islem seciniz:"
+echo "1 - toplama"
+echo "2 - cikarma"
+echo "3 - carpma"
+echo "4 - bolme"
+read islem
+
+if [ $islem -eq 1 ]; then
+    echo "toplam: $((sayi1 + sayi2))"
+
+elif [ $islem -eq 2 ]; then
+    echo "cikarma: $((sayi1 - sayi2))"
+
+elif [ $islem -eq 3 ]; then
+    echo "carpma: $((sayi1 * sayi2))"
+
+elif [ $islem -eq 4 ]; then
+    echo "bolme: $((sayi1 / sayi2))"
+
+else
+    echo "hatali secim"
+fi
+
+---
 echo -n "sayi girin:"
 read sayi1
 echo -n "sayi girin:"
 read sayi2
-toplam =$((sayi1+sayi2))
-echo" toplam: $toplam"
+toplam=$((sayi1+sayi2))
+echo "toplam: $toplam"
 cikarma=$((sayi1-sayi2))
 echo "cikarma: $cikarma"
 carpma=$((sayi1*sayi2))
@@ -61,6 +92,5 @@ sayi girin:100
 sayi  girin:5
 1
 ----
-
 
 
