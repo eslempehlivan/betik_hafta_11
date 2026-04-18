@@ -1,4 +1,18 @@
 
+echo "ismini gir"
+read ad
+echo "yasini gir"
+read yas
+echo "$ad sen $yas yasindasin"
+
+---
+name="Eslem"
+echo "Hello, $name!"
+number=95
+echo "The number is $number"
+
+--
+#hesap makinesi
 echo -n "1. sayi: "
 read sayi1
 
@@ -60,6 +74,7 @@ carpma: 900
 bolme: 9
 
 -------------
+
 echo "erkek icin 0-1"
 read erkek
 
