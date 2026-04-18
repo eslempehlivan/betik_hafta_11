@@ -38,25 +38,29 @@ read kadin
 echo "islemi seciniz 1 - (&&), 2 - (||), 3 - (!)"
 read islem
 
-if [ $islem -eq 1 ]; then
-    sonuc=$(($erkek && $kadin))
+if [ "$islem" -eq 1 ]; then
+    sonuc=$((erkek && kadin))
     echo "sonuc $sonuc"
 
-elif [ $islem -eq 2 ]; then
-    sonuc=$(($erkek || $kadin))
+elif [ "$islem" -eq 2 ]; then
+    sonuc=$((erkek || kadin))
+    echo "sonuc $sonuc"
+
+elif [ "$islem" -eq 3 ]; then
+    sonuc=$((!erkek))
     echo "sonuc $sonuc"
 
 else
-    sonuc=$(($!erkek))
-    echo "sonuc $sonuc"
-
+    echo "hatali secim"
 fi
+
 
 ┌──(kali㉿kali1337)-[~]
 └─$ ./sıla.sh      
 sayi girin:100
 sayi  girin:5
 1
+----
 
 
 
