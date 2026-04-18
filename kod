@@ -29,15 +29,27 @@ carpma: 900
 bolme: 9
 
 -------------
-echo -n "sayi girin:"
-read sayı1
-echo -n " sayi  girin:"
-read sayi2
+echo "erkek icin 0-1"
+read erkek
 
-if(sayi1>sayi2 || sayi1=sayi2); then
-echo "1"
+echo "kadin icin 0-1"
+read kadin
+
+echo "islemi seciniz 1 - (&&), 2 - (||), 3 - (!)"
+read islem
+
+if [ $islem -eq 1 ]; then
+    sonuc=$(($erkek && $kadin))
+    echo "sonuc $sonuc"
+
+elif [ $islem -eq 2 ]; then
+    sonuc=$(($erkek || $kadin))
+    echo "sonuc $sonuc"
+
 else
-echo "0"
+    sonuc=$(($!erkek))
+    echo "sonuc $sonuc"
+
 fi
 
 ┌──(kali㉿kali1337)-[~]
