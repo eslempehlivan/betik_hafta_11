@@ -1,0 +1,50 @@
+echo -n "sayi girin:"
+read sayi1
+echo -n "sayi girin:"
+read sayi2
+toplam =$((sayi1+sayi2))
+echo" toplam: $toplam"
+cikarma=$((sayi1-sayi2))
+echo "cikarma: $cikarma"
+carpma=$((sayi1*sayi2))
+echo "carpma: $carpma"
+bolme=$((sayi1/sayi2))
+echo "bolme: $bolme"
+
+                                                                                                                                              
+┌──(kali㉿kali1337)-[~]
+└─$ nano sila.sh
+                                                                                                                                              
+┌──(kali㉿kali1337)-[~]
+└─$ chmod +x sila.sh
+                                                                                                                                              
+┌──(kali㉿kali1337)-[~]
+└─$ ./sila.sh
+sayi girin:90
+sayi girin:10
+
+toplam: : 100
+cikarma: 80
+carpma: 900
+bolme: 9
+
+-------------
+echo -n "sayi girin:"
+read sayı1
+echo -n " sayi  girin:"
+read sayi2
+
+if(sayi1>sayi2 || sayi1=sayi2); then
+echo "1"
+else
+echo "0"
+fi
+
+┌──(kali㉿kali1337)-[~]
+└─$ ./sıla.sh      
+sayi girin:100
+sayi  girin:5
+1
+
+
+
